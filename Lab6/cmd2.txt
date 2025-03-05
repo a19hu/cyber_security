@@ -1,0 +1,75 @@
+nmap -sV -p- 10.40.0.10-110
+
+Starting Nmap 7.95 ( https://nmap.org ) at 2025-03-04 19:47 IST
+Nmap scan report for 10.40.0.13
+Host is up (0.0088s latency).
+Not shown: 65527 filtered tcp ports (no-response)
+PORT      STATE SERVICE         VERSION
+80/tcp    open  http            Microsoft IIS httpd 10.0
+135/tcp   open  msrpc           Microsoft Windows RPC
+902/tcp   open  ssl/vmware-auth VMware Authentication Daemon 1.10 (Uses VNC, SOAP)
+912/tcp   open  vmware-auth     VMware Authentication Daemon 1.0 (Uses VNC, SOAP)
+3389/tcp  open  ms-wbt-server
+5040/tcp  open  unknown
+8031/tcp  open  http            Microsoft HTTPAPI httpd 2.0 (SSDP/UPnP)
+49666/tcp open  msrpc           Microsoft Windows RPC
+1 service unrecognized despite returning data. If you know the service/version, please submit the following fingerprint at https://nmap.org/cgi-bin/submit.cgi?new-service :
+SF-Port3389-TCP:V=7.95%I=7%D=3/4%Time=67C70CD6%P=x86_64-pc-linux-gnu%r(Ter
+SF:minalServerCookie,13,"\x03\0\0\x13\x0e\xd0\0\0\x124\0\x02\?\x08\0\x02\0
+SF:\0\0");
+Service Info: OS: Windows; CPE: cpe:/o:microsoft:windows
+
+Nmap scan report for 10.40.0.15
+Host is up (0.0056s latency).
+Not shown: 65527 filtered tcp ports (no-response)
+PORT      STATE SERVICE         VERSION
+80/tcp    open  http            Microsoft IIS httpd 10.0
+135/tcp   open  msrpc           Microsoft Windows RPC
+902/tcp   open  ssl/vmware-auth VMware Authentication Daemon 1.10 (Uses VNC, SOAP)
+912/tcp   open  vmware-auth     VMware Authentication Daemon 1.0 (Uses VNC, SOAP)
+3389/tcp  open  ms-wbt-server
+5040/tcp  open  unknown
+8031/tcp  open  http            Microsoft HTTPAPI httpd 2.0 (SSDP/UPnP)
+49668/tcp open  msrpc           Microsoft Windows RPC
+1 service unrecognized despite returning data. If you know the service/version, please submit the following fingerprint at https://nmap.org/cgi-bin/submit.cgi?new-service :
+SF-Port3389-TCP:V=7.95%I=7%D=3/4%Time=67C70CD6%P=x86_64-pc-linux-gnu%r(Ter
+SF:minalServerCookie,13,"\x03\0\0\x13\x0e\xd0\0\0\x124\0\x02\?\x08\0\x02\0
+SF:\0\0");
+Service Info: OS: Windows; CPE: cpe:/o:microsoft:windows
+
+Nmap scan report for 10.40.0.16
+Host is up (0.0045s latency).
+Not shown: 65527 filtered tcp ports (no-response)
+PORT      STATE SERVICE         VERSION
+80/tcp    open  http            Microsoft IIS httpd 10.0
+135/tcp   open  msrpc           Microsoft Windows RPC
+902/tcp   open  ssl/vmware-auth VMware Authentication Daemon 1.10 (Uses VNC, SOAP)
+912/tcp   open  vmware-auth     VMware Authentication Daemon 1.0 (Uses VNC, SOAP)
+3389/tcp  open  ms-wbt-server
+5040/tcp  open  unknown
+8031/tcp  open  http            Microsoft HTTPAPI httpd 2.0 (SSDP/UPnP)
+49666/tcp open  msrpc           Microsoft Windows RPC
+1 service unrecognized despite returning data. If you know the service/version, please submit the following fingerprint at https://nmap.org/cgi-bin/submit.cgi?new-service :
+SF-Port3389-TCP:V=7.95%I=7%D=3/4%Time=67C70CD6%P=x86_64-pc-linux-gnu%r(Ter
+SF:minalServerCookie,13,"\x03\0\0\x13\x0e\xd0\0\0\x124\0\x02\?\x08\0\x02\0
+SF:\0\0");
+Service Info: OS: Windows; CPE: cpe:/o:microsoft:windows
+
+Nmap scan report for 10.40.0.18
+Host is up (0.0051s latency).
+Not shown: 65526 filtered tcp ports (no-response)
+PORT      STATE SERVICE         VERSION
+80/tcp    open  http            Microsoft IIS httpd 10.0
+135/tcp   open  msrpc           Microsoft Windows RPC
+902/tcp   open  ssl/vmware-auth VMware Authentication Daemon 1.10 (Uses VNC, SOAP)
+912/tcp   open  vmware-auth     VMware Authentication Daemon 1.0 (Uses VNC, SOAP)
+3389/tcp  open  ms-wbt-server
+5040/tcp  open  unknown
+7680/tcp  open  pando-pub?
+8031/tcp  open  http            Microsoft HTTPAPI httpd 2.0 (SSDP/UPnP)
+49666/tcp open  msrpc           Microsoft Windows RPC
+1 service unrecognized despite returning data. If you know the service/version, please submit the following fingerprint at https://nmap.org/cgi-bin/submit.cgi?new-service :
+SF-Port3389-TCP:V=7.95%I=7%D=3/4%Time=67C70CDC%P=x86_64-pc-linux-gnu%r(Ter
+SF:minalServerCookie,13,"\x03\0\0\x13\x0e\xd0\0\0\x124\0\x02\?\x08\0\x02\0
+SF:\0\0");
+Service Info: OS: Windows; CPE: cpe:/o:microsoft:windows

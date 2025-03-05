@@ -1,0 +1,513 @@
+nmap --script vuln 10.40.0.10-110
+
+Starting Nmap 7.95 ( https://nmap.org ) at 2025-03-04 19:31 IST
+Nmap scan report for 10.40.0.13
+Host is up (0.0061s latency).
+Not shown: 994 filtered tcp ports (no-response)
+PORT     STATE SERVICE
+80/tcp   open  http
+|_http-dombased-xss: Couldn't find any DOM based XSS.
+|_http-stored-xss: Couldn't find any stored XSS vulnerabilities.
+|_http-csrf: Couldn't find any CSRF vulnerabilities.
+135/tcp  open  msrpc
+902/tcp  open  iss-realsecure
+912/tcp  open  apex-mesh
+3389/tcp open  ms-wbt-server
+8031/tcp open  unknown
+
+Nmap scan report for 10.40.0.15
+Host is up (0.0064s latency).
+Not shown: 994 filtered tcp ports (no-response)
+PORT     STATE SERVICE
+80/tcp   open  http
+|_http-csrf: Couldn't find any CSRF vulnerabilities.
+|_http-dombased-xss: Couldn't find any DOM based XSS.
+|_http-stored-xss: Couldn't find any stored XSS vulnerabilities.
+135/tcp  open  msrpc
+902/tcp  open  iss-realsecure
+912/tcp  open  apex-mesh
+3389/tcp open  ms-wbt-server
+8031/tcp open  unknown
+
+Nmap scan report for 10.40.0.16
+Host is up (0.0052s latency).
+Not shown: 994 filtered tcp ports (no-response)
+PORT     STATE SERVICE
+80/tcp   open  http
+|_http-csrf: Couldn't find any CSRF vulnerabilities.
+|_http-stored-xss: Couldn't find any stored XSS vulnerabilities.
+|_http-dombased-xss: Couldn't find any DOM based XSS.
+135/tcp  open  msrpc
+902/tcp  open  iss-realsecure
+912/tcp  open  apex-mesh
+3389/tcp open  ms-wbt-server
+8031/tcp open  unknown
+
+Nmap scan report for 10.40.0.18
+Host is up (0.0064s latency).
+Not shown: 994 filtered tcp ports (no-response)
+PORT     STATE SERVICE
+80/tcp   open  http
+|_http-csrf: Couldn't find any CSRF vulnerabilities.
+|_http-stored-xss: Couldn't find any stored XSS vulnerabilities.
+|_http-dombased-xss: Couldn't find any DOM based XSS.
+135/tcp  open  msrpc
+902/tcp  open  iss-realsecure
+912/tcp  open  apex-mesh
+3389/tcp open  ms-wbt-server
+8031/tcp open  unknown
+
+Nmap scan report for 10.40.0.19
+Host is up (0.0057s latency).
+Not shown: 994 filtered tcp ports (no-response)
+PORT     STATE SERVICE
+80/tcp   open  http
+|_http-stored-xss: Couldn't find any stored XSS vulnerabilities.
+|_http-dombased-xss: Couldn't find any DOM based XSS.
+|_http-csrf: Couldn't find any CSRF vulnerabilities.
+135/tcp  open  msrpc
+902/tcp  open  iss-realsecure
+912/tcp  open  apex-mesh
+3389/tcp open  ms-wbt-server
+8031/tcp open  unknown
+
+Nmap scan report for 10.40.0.20
+Host is up (0.0054s latency).
+Not shown: 994 filtered tcp ports (no-response)
+PORT     STATE SERVICE
+80/tcp   open  http
+|_http-dombased-xss: Couldn't find any DOM based XSS.
+|_http-stored-xss: Couldn't find any stored XSS vulnerabilities.
+| http-slowloris-check: 
+|   VULNERABLE:
+|   Slowloris DOS attack
+|     State: LIKELY VULNERABLE
+|     IDs:  CVE:CVE-2007-6750
+|       Slowloris tries to keep many connections to the target web server open and hold
+|       them open as long as possible.  It accomplishes this by opening connections to
+|       the target web server and sending a partial request. By doing so, it starves
+|       the http server's resources causing Denial Of Service.
+|       
+|     Disclosure date: 2009-09-17
+|     References:
+|       https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2007-6750
+|_      http://ha.ckers.org/slowloris/
+|_http-csrf: Couldn't find any CSRF vulnerabilities.
+135/tcp  open  msrpc
+902/tcp  open  iss-realsecure
+912/tcp  open  apex-mesh
+3389/tcp open  ms-wbt-server
+8031/tcp open  unknown
+
+Nmap scan report for 10.40.0.22
+Host is up (0.0075s latency).
+Not shown: 994 filtered tcp ports (no-response)
+PORT     STATE SERVICE
+80/tcp   open  http
+|_http-csrf: Couldn't find any CSRF vulnerabilities.
+|_http-stored-xss: Couldn't find any stored XSS vulnerabilities.
+|_http-dombased-xss: Couldn't find any DOM based XSS.
+135/tcp  open  msrpc
+902/tcp  open  iss-realsecure
+912/tcp  open  apex-mesh
+3389/tcp open  ms-wbt-server
+8031/tcp open  unknown
+
+Nmap scan report for 10.40.0.23
+Host is up (0.0080s latency).
+Not shown: 994 filtered tcp ports (no-response)
+PORT     STATE SERVICE
+80/tcp   open  http
+|_http-stored-xss: Couldn't find any stored XSS vulnerabilities.
+|_http-dombased-xss: Couldn't find any DOM based XSS.
+|_http-csrf: Couldn't find any CSRF vulnerabilities.
+135/tcp  open  msrpc
+902/tcp  open  iss-realsecure
+912/tcp  open  apex-mesh
+3389/tcp open  ms-wbt-server
+8031/tcp open  unknown
+
+Nmap scan report for 10.40.0.25
+Host is up (0.0067s latency).
+Not shown: 994 filtered tcp ports (no-response)
+PORT     STATE SERVICE
+80/tcp   open  http
+|_http-dombased-xss: Couldn't find any DOM based XSS.
+|_http-stored-xss: Couldn't find any stored XSS vulnerabilities.
+| http-slowloris-check: 
+|   VULNERABLE:
+|   Slowloris DOS attack
+|     State: LIKELY VULNERABLE
+|     IDs:  CVE:CVE-2007-6750
+|       Slowloris tries to keep many connections to the target web server open and hold
+|       them open as long as possible.  It accomplishes this by opening connections to
+|       the target web server and sending a partial request. By doing so, it starves
+|       the http server's resources causing Denial Of Service.
+|       
+|     Disclosure date: 2009-09-17
+|     References:
+|       https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2007-6750
+|_      http://ha.ckers.org/slowloris/
+|_http-csrf: Couldn't find any CSRF vulnerabilities.
+135/tcp  open  msrpc
+902/tcp  open  iss-realsecure
+912/tcp  open  apex-mesh
+3389/tcp open  ms-wbt-server
+8031/tcp open  unknown
+
+Nmap scan report for 10.40.0.26
+Host is up (0.0074s latency).
+Not shown: 994 filtered tcp ports (no-response)
+PORT     STATE SERVICE
+80/tcp   open  http
+|_http-stored-xss: Couldn't find any stored XSS vulnerabilities.
+|_http-dombased-xss: Couldn't find any DOM based XSS.
+|_http-csrf: Couldn't find any CSRF vulnerabilities.
+135/tcp  open  msrpc
+902/tcp  open  iss-realsecure
+912/tcp  open  apex-mesh
+3389/tcp open  ms-wbt-server
+8031/tcp open  unknown
+
+Nmap scan report for 10.40.0.34
+Host is up (0.0058s latency).
+Not shown: 994 filtered tcp ports (no-response)
+PORT     STATE SERVICE
+80/tcp   open  http
+|_http-csrf: Couldn't find any CSRF vulnerabilities.
+|_http-dombased-xss: Couldn't find any DOM based XSS.
+|_http-stored-xss: Couldn't find any stored XSS vulnerabilities.
+135/tcp  open  msrpc
+902/tcp  open  iss-realsecure
+912/tcp  open  apex-mesh
+3389/tcp open  ms-wbt-server
+8031/tcp open  unknown
+
+Nmap scan report for 10.40.0.35
+Host is up (0.0036s latency).
+Not shown: 994 filtered tcp ports (no-response)
+PORT     STATE SERVICE
+80/tcp   open  http
+|_http-stored-xss: Couldn't find any stored XSS vulnerabilities.
+|_http-dombased-xss: Couldn't find any DOM based XSS.
+|_http-csrf: Couldn't find any CSRF vulnerabilities.
+135/tcp  open  msrpc
+902/tcp  open  iss-realsecure
+912/tcp  open  apex-mesh
+3389/tcp open  ms-wbt-server
+8031/tcp open  unknown
+
+Nmap scan report for 10.40.0.36
+Host is up (0.0062s latency).
+Not shown: 994 filtered tcp ports (no-response)
+PORT     STATE SERVICE
+80/tcp   open  http
+|_http-dombased-xss: Couldn't find any DOM based XSS.
+|_http-csrf: Couldn't find any CSRF vulnerabilities.
+|_http-stored-xss: Couldn't find any stored XSS vulnerabilities.
+135/tcp  open  msrpc
+902/tcp  open  iss-realsecure
+912/tcp  open  apex-mesh
+3389/tcp open  ms-wbt-server
+8031/tcp open  unknown
+
+Nmap scan report for 10.40.0.39
+Host is up (0.0039s latency).
+Not shown: 994 filtered tcp ports (no-response)
+PORT     STATE SERVICE
+80/tcp   open  http
+|_http-stored-xss: Couldn't find any stored XSS vulnerabilities.
+|_http-csrf: Couldn't find any CSRF vulnerabilities.
+|_http-dombased-xss: Couldn't find any DOM based XSS.
+135/tcp  open  msrpc
+902/tcp  open  iss-realsecure
+912/tcp  open  apex-mesh
+3389/tcp open  ms-wbt-server
+8031/tcp open  unknown
+
+Nmap scan report for 10.40.0.41
+Host is up (0.0086s latency).
+Not shown: 998 closed tcp ports (conn-refused)
+PORT     STATE SERVICE
+22/tcp   open  ssh
+3389/tcp open  ms-wbt-server
+|_ssl-ccs-injection: No reply from server (TIMEOUT)
+
+Nmap scan report for 10.40.0.42
+Host is up (0.011s latency).
+Not shown: 998 closed tcp ports (conn-refused)
+PORT     STATE SERVICE
+22/tcp   open  ssh
+3389/tcp open  ms-wbt-server
+|_ssl-ccs-injection: No reply from server (TIMEOUT)
+
+Nmap scan report for 10.40.0.43
+Host is up (0.0040s latency).
+Not shown: 994 filtered tcp ports (no-response)
+PORT     STATE SERVICE
+80/tcp   open  http
+|_http-dombased-xss: Couldn't find any DOM based XSS.
+|_http-stored-xss: Couldn't find any stored XSS vulnerabilities.
+|_http-csrf: Couldn't find any CSRF vulnerabilities.
+135/tcp  open  msrpc
+902/tcp  open  iss-realsecure
+912/tcp  open  apex-mesh
+3389/tcp open  ms-wbt-server
+8031/tcp open  unknown
+
+Nmap scan report for 10.40.0.44
+Host is up (0.0099s latency).
+Not shown: 998 closed tcp ports (conn-refused)
+PORT     STATE SERVICE
+22/tcp   open  ssh
+3389/tcp open  ms-wbt-server
+|_ssl-ccs-injection: No reply from server (TIMEOUT)
+
+Nmap scan report for 10.40.0.45
+Host is up (0.012s latency).
+Not shown: 998 closed tcp ports (conn-refused)
+PORT     STATE SERVICE
+22/tcp   open  ssh
+3389/tcp open  ms-wbt-server
+|_ssl-ccs-injection: No reply from server (TIMEOUT)
+
+Nmap scan report for 10.40.0.46
+Host is up (0.0038s latency).
+Not shown: 994 filtered tcp ports (no-response)
+PORT     STATE SERVICE
+80/tcp   open  http
+|_http-stored-xss: Couldn't find any stored XSS vulnerabilities.
+| http-slowloris-check: 
+|   VULNERABLE:
+|   Slowloris DOS attack
+|     State: LIKELY VULNERABLE
+|     IDs:  CVE:CVE-2007-6750
+|       Slowloris tries to keep many connections to the target web server open and hold
+|       them open as long as possible.  It accomplishes this by opening connections to
+|       the target web server and sending a partial request. By doing so, it starves
+|       the http server's resources causing Denial Of Service.
+|       
+|     Disclosure date: 2009-09-17
+|     References:
+|       https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2007-6750
+|_      http://ha.ckers.org/slowloris/
+|_http-dombased-xss: Couldn't find any DOM based XSS.
+|_http-csrf: Couldn't find any CSRF vulnerabilities.
+135/tcp  open  msrpc
+902/tcp  open  iss-realsecure
+912/tcp  open  apex-mesh
+3389/tcp open  ms-wbt-server
+8031/tcp open  unknown
+
+Nmap scan report for 10.40.0.47
+Host is up (0.0051s latency).
+Not shown: 994 filtered tcp ports (no-response)
+PORT     STATE SERVICE
+80/tcp   open  http
+| http-slowloris-check: 
+|   VULNERABLE:
+|   Slowloris DOS attack
+|     State: LIKELY VULNERABLE
+|     IDs:  CVE:CVE-2007-6750
+|       Slowloris tries to keep many connections to the target web server open and hold
+|       them open as long as possible.  It accomplishes this by opening connections to
+|       the target web server and sending a partial request. By doing so, it starves
+|       the http server's resources causing Denial Of Service.
+|       
+|     Disclosure date: 2009-09-17
+|     References:
+|       https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2007-6750
+|_      http://ha.ckers.org/slowloris/
+|_http-csrf: Couldn't find any CSRF vulnerabilities.
+|_http-stored-xss: Couldn't find any stored XSS vulnerabilities.
+|_http-dombased-xss: Couldn't find any DOM based XSS.
+135/tcp  open  msrpc
+902/tcp  open  iss-realsecure
+912/tcp  open  apex-mesh
+3389/tcp open  ms-wbt-server
+8031/tcp open  unknown
+
+Nmap scan report for 10.40.0.51
+Host is up (0.0035s latency).
+Not shown: 994 filtered tcp ports (no-response)
+PORT     STATE SERVICE
+80/tcp   open  http
+|_http-dombased-xss: Couldn't find any DOM based XSS.
+|_http-csrf: Couldn't find any CSRF vulnerabilities.
+| http-slowloris-check: 
+|   VULNERABLE:
+|   Slowloris DOS attack
+|     State: LIKELY VULNERABLE
+|     IDs:  CVE:CVE-2007-6750
+|       Slowloris tries to keep many connections to the target web server open and hold
+|       them open as long as possible.  It accomplishes this by opening connections to
+|       the target web server and sending a partial request. By doing so, it starves
+|       the http server's resources causing Denial Of Service.
+|       
+|     Disclosure date: 2009-09-17
+|     References:
+|       https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2007-6750
+|_      http://ha.ckers.org/slowloris/
+|_http-stored-xss: Couldn't find any stored XSS vulnerabilities.
+135/tcp  open  msrpc
+902/tcp  open  iss-realsecure
+912/tcp  open  apex-mesh
+3389/tcp open  ms-wbt-server
+8031/tcp open  unknown
+
+Nmap scan report for 10.40.0.52
+Host is up (0.0078s latency).
+Not shown: 994 filtered tcp ports (no-response)
+PORT     STATE SERVICE
+80/tcp   open  http
+|_http-dombased-xss: Couldn't find any DOM based XSS.
+|_http-stored-xss: Couldn't find any stored XSS vulnerabilities.
+|_http-csrf: Couldn't find any CSRF vulnerabilities.
+135/tcp  open  msrpc
+902/tcp  open  iss-realsecure
+912/tcp  open  apex-mesh
+3389/tcp open  ms-wbt-server
+8031/tcp open  unknown
+
+Nmap scan report for 10.40.0.53
+Host is up (0.0041s latency).
+Not shown: 994 filtered tcp ports (no-response)
+PORT     STATE SERVICE
+80/tcp   open  http
+| http-slowloris-check: 
+|   VULNERABLE:
+|   Slowloris DOS attack
+|     State: LIKELY VULNERABLE
+|     IDs:  CVE:CVE-2007-6750
+|       Slowloris tries to keep many connections to the target web server open and hold
+|       them open as long as possible.  It accomplishes this by opening connections to
+|       the target web server and sending a partial request. By doing so, it starves
+|       the http server's resources causing Denial Of Service.
+|       
+|     Disclosure date: 2009-09-17
+|     References:
+|       https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2007-6750
+|_      http://ha.ckers.org/slowloris/
+|_http-dombased-xss: Couldn't find any DOM based XSS.
+|_http-csrf: Couldn't find any CSRF vulnerabilities.
+|_http-stored-xss: Couldn't find any stored XSS vulnerabilities.
+135/tcp  open  msrpc
+902/tcp  open  iss-realsecure
+912/tcp  open  apex-mesh
+3389/tcp open  ms-wbt-server
+8031/tcp open  unknown
+
+Nmap scan report for 10.40.0.55
+Host is up (0.0085s latency).
+Not shown: 998 closed tcp ports (conn-refused)
+PORT     STATE SERVICE
+22/tcp   open  ssh
+3389/tcp open  ms-wbt-server
+|_ssl-ccs-injection: No reply from server (TIMEOUT)
+
+Nmap scan report for 10.40.0.56
+Host is up (0.0035s latency).
+Not shown: 994 filtered tcp ports (no-response)
+PORT     STATE SERVICE
+80/tcp   open  http
+|_http-stored-xss: Couldn't find any stored XSS vulnerabilities.
+|_http-dombased-xss: Couldn't find any DOM based XSS.
+|_http-csrf: Couldn't find any CSRF vulnerabilities.
+135/tcp  open  msrpc
+902/tcp  open  iss-realsecure
+912/tcp  open  apex-mesh
+3389/tcp open  ms-wbt-server
+8031/tcp open  unknown
+
+Nmap scan report for 10.40.0.57
+Host is up (0.0047s latency).
+Not shown: 994 filtered tcp ports (no-response)
+PORT     STATE SERVICE
+80/tcp   open  http
+|_http-dombased-xss: Couldn't find any DOM based XSS.
+|_http-csrf: Couldn't find any CSRF vulnerabilities.
+|_http-stored-xss: Couldn't find any stored XSS vulnerabilities.
+135/tcp  open  msrpc
+902/tcp  open  iss-realsecure
+912/tcp  open  apex-mesh
+3389/tcp open  ms-wbt-server
+8031/tcp open  unknown
+
+Nmap scan report for 10.40.0.58
+Host is up (0.0044s latency).
+Not shown: 994 filtered tcp ports (no-response)
+PORT     STATE SERVICE
+80/tcp   open  http
+| http-slowloris-check: 
+|   VULNERABLE:
+|   Slowloris DOS attack
+|     State: LIKELY VULNERABLE
+|     IDs:  CVE:CVE-2007-6750
+|       Slowloris tries to keep many connections to the target web server open and hold
+|       them open as long as possible.  It accomplishes this by opening connections to
+|       the target web server and sending a partial request. By doing so, it starves
+|       the http server's resources causing Denial Of Service.
+|       
+|     Disclosure date: 2009-09-17
+|     References:
+|       https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2007-6750
+|_      http://ha.ckers.org/slowloris/
+|_http-dombased-xss: Couldn't find any DOM based XSS.
+|_http-stored-xss: Couldn't find any stored XSS vulnerabilities.
+|_http-csrf: Couldn't find any CSRF vulnerabilities.
+135/tcp  open  msrpc
+902/tcp  open  iss-realsecure
+912/tcp  open  apex-mesh
+3389/tcp open  ms-wbt-server
+8031/tcp open  unknown
+
+Nmap scan report for 10.40.0.60
+Host is up (0.0076s latency).
+Not shown: 998 closed tcp ports (conn-refused)
+PORT     STATE SERVICE
+22/tcp   open  ssh
+3389/tcp open  ms-wbt-server
+|_ssl-ccs-injection: No reply from server (TIMEOUT)
+
+Nmap scan report for 10.40.0.87
+Host is up (0.011s latency).
+Not shown: 998 closed tcp ports (conn-refused)
+PORT     STATE SERVICE
+22/tcp   open  ssh
+3389/tcp open  ms-wbt-server
+|_ssl-ccs-injection: No reply from server (TIMEOUT)
+
+Nmap scan report for 10.40.0.96
+Host is up (0.0092s latency).
+Not shown: 990 closed tcp ports (conn-refused)
+PORT     STATE SERVICE
+111/tcp  open  rpcbind
+135/tcp  open  msrpc
+139/tcp  open  netbios-ssn
+902/tcp  open  iss-realsecure
+912/tcp  open  apex-mesh
+3389/tcp open  ms-wbt-server
+5357/tcp open  wsdapi
+5432/tcp open  postgresql
+7777/tcp open  cbt
+8031/tcp open  unknown
+
+Host script results:
+|_smb-vuln-ms10-061: SMB: Couldn't find a NetBIOS name that works for the server. Sorry!
+|_samba-vuln-cve-2012-1182: SMB: Couldn't find a NetBIOS name that works for the server. Sorry!
+| smb-vuln-cve2009-3103: 
+|   VULNERABLE:
+|   SMBv2 exploit (CVE-2009-3103, Microsoft Security Advisory 975497)
+|     State: VULNERABLE
+|     IDs:  CVE:CVE-2009-3103
+|           Array index error in the SMBv2 protocol implementation in srv2.sys in Microsoft Windows Vista Gold, SP1, and SP2,
+|           Windows Server 2008 Gold and SP2, and Windows 7 RC allows remote attackers to execute arbitrary code or cause a
+|           denial of service (system crash) via an & (ampersand) character in a Process ID High header field in a NEGOTIATE
+|           PROTOCOL REQUEST packet, which triggers an attempted dereference of an out-of-bounds memory location,
+|           aka "SMBv2 Negotiation Vulnerability."
+|           
+|     Disclosure date: 2009-09-08
+|     References:
+|       https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2009-3103
+|_      http://www.cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2009-3103
+|_smb-vuln-ms10-054: false
